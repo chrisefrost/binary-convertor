@@ -48,10 +48,10 @@ A simple graphical user interface (GUI) application to convert **integers** and 
 
 ## Usage
 
-### Binary Number Converter (`binary.py`)
+### Binary Number Converter (`number-to-binary.py`)
 1. Run the application:
    ```bash
-   python binary.py
+   python number-to-binary.py
    ```
 
 2. Enter an integer in the input box and click **Convert** or press **Enter**.
