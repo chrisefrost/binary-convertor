@@ -63,11 +63,11 @@ class BinaryConverterApp:
         ttk.Label(result_frame, text="Binary Result:", style="Header.TLabel").pack(side="left", padx=(0, 10))
         # This adds a label that says "Binary Result:" to the result frame.
 
-        self.result_var = tk.StringVar()
-        self.result_var.set("00000000")
-        result_label = ttk.Label(result_frame, textvariable=self.result_var, style="Result.TLabel")
-        result_label.pack(side="left")
-        # This creates a label that will show the binary result. It starts by showing "00000000".
+        # Use a Text widget for the binary result so it can be copied
+        self.result_text = tk.Text(result_frame, height=1, width=20, font=("Consolas", 12), wrap="none")
+        self.result_text.insert(tk.END, "00000000")  # Start with the default value
+        self.result_text.pack(side="left", padx=(0, 10))
+        # This creates a box where the binary result will be shown. You can copy the text from this box.
 
         # Table frame
         self.table_frame = ttk.Frame(main_frame, style="Table.TFrame")
@@ -91,7 +91,6 @@ class BinaryConverterApp:
 
         # Configure modern-looking styles
         style.configure("Header.TLabel", font=("Segoe UI", 10, "bold"))
-        style.configure("Result.TLabel", font=("Consolas", 12), foreground="#0066cc")
         style.configure("Status.TLabel", font=("Segoe UI", 9), foreground="#666666")
         style.configure("Convert.TButton", padding=5)
         style.configure("Table.TFrame", padding=5)
@@ -192,7 +191,8 @@ class BinaryConverterApp:
         try:
             number = int(self.number_entry.get())
             binary = self.convert_to_binary(number)
-            self.result_var.set(binary)
+            self.result_text.delete(1.0, tk.END)  # Clear the previous result
+            self.result_text.insert(tk.END, binary)  # Insert the new binary result
             self.create_table(binary)
             self.status_var.set(f"Converted successfully! {number} in binary is {binary}")
         except ValueError:
