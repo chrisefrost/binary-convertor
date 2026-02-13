@@ -1,5 +1,7 @@
 # Quick Start Guide - Binary Converter Pro
 
+> **Get started in 5 minutes! Perfect for students learning binary and number systems.**
+
 ## Installation
 
 1. **Install Python** (3.7 or higher) if you haven't already
@@ -89,6 +91,38 @@ python binary_converter_app.py
 - For negative numbers, make sure you understand two's complement
 - Toggle the "signed" checkbox in Binary Decoder
 
+## Learning Tips for Students
+
+### Start Simple
+1. Begin with small numbers (0-15) to understand patterns
+2. Notice how each bit position represents a power of 2
+3. Practice converting your favorite numbers
+
+### Understanding Binary
+- Think of binary like light switches: ON (1) or OFF (0)
+- Each position is worth double the previous one: 1, 2, 4, 8, 16, 32...
+- To get 5: turn on positions 4 and 1 → `00000101`
+
+### Why Hexadecimal?
+- Programmers use hex because it's shorter than binary
+- Every 4 binary digits = 1 hex digit
+- Example: `1111 1111` = `FF` = 255
+
+### Two's Complement (Negative Numbers)
+- Computers can't use a minus sign
+- Instead, they flip the pattern for negative numbers
+- The leftmost bit tells if it's negative (1) or positive (0)
+
+### Fun Challenges
+- Convert your house number to binary
+- Spell "HI" in binary: `01001000 01101001`
+- Find your birthday in hex
+- Decode secret binary messages from friends
+
+---
+
 ## Need Help?
 
-Check the full [README.md](README.md) for detailed documentation or open an issue on GitHub.
+- Check the full [README.md](README.md) for detailed documentation
+- See [FEATURES.md](FEATURES.md) for in-depth examples
+- Open an issue on GitHub if you find bugs

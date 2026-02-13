@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(pip install:*)",
-      "Bash(python binary_converter_app.py:*)"
+      "Bash(python binary_converter_app.py:*)",
+      "Bash(ls:*)",
+      "Bash(findstr:*)"
     ]
   }
 }

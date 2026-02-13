@@ -1,7 +1,9 @@
-# Binary Converter - Improvements Summary
+# Binary Converter - Development History
+
+> **This document explains how the project evolved from simple converters to a comprehensive educational tool.**
 
 ## Overview
-This document outlines all improvements made to transform the original binary converter project into a modern, feature-rich application.
+This document outlines the improvements made to transform the original binary converter scripts into a modern, feature-rich educational application designed to help students learn number systems and computer encoding.
 
 ---
 

@@ -1,8 +1,10 @@
 # Feature Guide - Binary Converter Pro
 
+> **Learn by doing! This guide shows you how to use every feature with real examples.**
+
 ## Application Overview
 
-Binary Converter Pro is a comprehensive conversion tool with three main tabs:
+Binary Converter Pro is a comprehensive conversion tool with three main tabs that help you understand how computers work with numbers and text:
 
 ---
 
